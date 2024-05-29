@@ -1,1 +1,1 @@
-# mdrskn-pseudo-ui
+# @mdrskn/pseudo-ui
