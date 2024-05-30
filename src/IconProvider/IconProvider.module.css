@@ -1,0 +1,16 @@
+.icon {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    /*画面幅が767pxまでの時*/
+    width: rem(24);
+    height: rem(24);
+    margin-right: rem(5);
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が768px以上の時*/
+    width: rem(32);
+    height: rem(32);
+  }
+}

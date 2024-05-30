@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build:live",
-    "build-rollup": "rollup -c",
-    "build": "tsc -p .",
+    "build": "tsc -p . && npm run copy-css",
+    "copy-css": "copyfiles -u 1 src/**/*.css dist/",
     "build:live": "nodemon --watch 'src/**/*.ts' --exec \"npm run build\"",
     "lint": "biome lint ./src",
     "format": "biome format --write ./src",
@@ -20,12 +20,18 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "copyfiles": "^2.4.1",
     "nodemon": "^3.1.0",
-    "rollup": "^4.18.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.10.0",
+    "@tabler/icons-react": "^3.5.0",
+    "react": "^18.3.1"
   }
 }

@@ -1,0 +1,32 @@
+.cardTextTitle {
+  @media screen and (max-width: 767px) {
+    /*画面幅が767pxまでの時*/
+    font-size: rem(16);
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が768px以上の時*/
+    font-size: rem(18);
+  }
+}
+
+.cardTextMainDescription {
+  @media screen and (max-width: 767px) {
+    /*画面幅が480pxまでの時*/
+    font-size: rem(12);
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が781px以上の時*/
+    font-size: rem(14);
+  }
+}
+
+.cardTextSubDescription {
+  @media screen and (max-width: 767px) {
+    /*画面幅が480pxまでの時*/
+    font-size: rem(10);
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が781px以上の時*/
+    font-size: rem(12);
+  }
+}

@@ -1,0 +1,35 @@
+.icon {
+  @media screen and (max-width: 767px) {
+    /*画面幅が767pxまでの時*/
+    width: rem(24);
+    height: rem(24);
+    margin-right: rem(5);
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が768px以上の時*/
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* LoadingOverlayを合わせるために必要 */
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    /*画面幅が767pxまでの時*/
+    padding: rem(24);
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    /*画面幅が768px以上の時*/
+    padding: rem(32);
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
